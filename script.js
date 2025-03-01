@@ -16,9 +16,9 @@ function clearVisor () {
 
 function viewResult () {
         let res = calculo.join("");
+        res = eval(res);
         calculo = [];
         calculo = [res];
-        res = eval(res);
         console.log(res);
         visor.innerHTML = res;
 };
