@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: pink;
+}
+
+
+
+.calculadoraArea{
+    width: 380px;
+    position: relative;
+    height: 540px;
+    /* background-color: #FD6FB5; */
+    background-image: url(./92623c94c49991d064b88f7e3f973ca8.jpg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+
+    & .areaResultado{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .visor{
+            height: 80px;
+            width: 90%;
+            background-color: #726F6A;
+            border-radius: 15px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 40px;
+            padding: 20px;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            color: #222222;
+        }
+    }
+}
+
+.areaNumbers{
+    display: flex;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.507);
+    color: #FD6FB5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.number:hover{
+    background-color: #ebebeb;
+}
+
+.ocupa2{
+    width: 160px;
+}
+
+.ros{
+    background-color: pink;
+    color: white;
+}
+
+.ros:hover{
+    background-color: rgb(236, 175, 185);
+}
+
+
+#result{
+    width: 96%;
+    height: 45px;
+    overflow: hidden;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+}
